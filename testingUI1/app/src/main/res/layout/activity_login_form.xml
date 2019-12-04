@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginForm">
+    <ImageView
+        android:id="@+id/ii"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/support"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/ll"
+        />
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userEditText"
+            android:hint="UserName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:hint="Password"
+            android:id="@+id/passwordEditText"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btnLoin"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/holo_blue_bright"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/rem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/checkbox"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"
+                android:text="Remember me"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textStyle="italic|bold"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
