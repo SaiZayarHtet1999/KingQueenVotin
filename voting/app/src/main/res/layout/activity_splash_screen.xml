@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="RelativeOverlap"
+    tools:context=".SplashScreen">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/splash_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        tools:ignore="RelativeOverlap"
+        android:layout_centerInParent="true"
+        app:lottie_fileName="welcome.json"
+        app:lottie_loop="true" />
+    <ImageView
+        android:id="@+id/cherry1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        tools:ignore="RelativeOverlap"
+        android:background="@drawable/cherry"
+        />
+    <ImageView
+        android:id="@+id/cherry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/cherry"
+        />
+    <ImageView
+        android:id="@+id/cherry3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/cherry"
+        />
+    <ImageView
+        android:id="@+id/cherry4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/cherry"
+        />
+
+    <ImageView
+        android:id="@+id/cherry5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/cherry" />
+
+    <ImageView
+        android:id="@+id/cherry6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/cherry"
+        android:layout_marginTop="250dp"/>
+
+    <ImageView
+        android:id="@+id/cherry7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/cherry"
+        />
+    <ImageView
+        android:id="@+id/cherry8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/cherry"
+        />
+    <ImageView
+        android:id="@+id/cherry9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="330dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cherry"
+        />
+    <ImageView
+        android:id="@+id/cherry10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/cherry"
+        />
+    <ImageView
+        android:id="@+id/cherry11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/cherry"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

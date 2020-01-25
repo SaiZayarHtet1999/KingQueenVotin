@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".slider">
+
+    <com.dev.sacot41.scviewpager.SCViewPager
+        android:id="@+id/viewpager_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.dev.sacot41.scviewpager.SCViewPager>
+
+    <com.dev.sacot41.scviewpager.DotsView
+        android:id="@+id/dotsview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" />
+
+    <!--for first slide-->
+    <TextView
+        android:id="@+id/imageview_main_activity_name_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="50dp"
+        android:text="Fresher Welcome"
+        android:textAlignment="center"
+        android:textColor="@color/amber"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageview_main_activity_currently_work"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imageview_main_activity_name_tag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="voting_ani.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/imageview_main_activity_at_skex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_main_activity_currently_work"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:justificationMode="inter_word"
+        android:text="1) တစ်ယောက်လျှင် vote နှစ်ခါသာ ပေးခွင့်ရှိသည်။ \n2) King အတွက် တစ်ခါ ဖြစ်၍ queen အတွက် တစ်ခါဖြစ်သည်။ \n3) Vote အများဆုံးရသော သူသည် king/queen ဖြစ်သည်။ \n4) ဒုတိယအများဆုံးရသူသည် Prince/Princess ဖြစ်သည်။\n5) အငြင်းပွားမူတစုံတရာ ‌ဖြစ်ပေါ်လာပါက Voting Admin Team ၏ အဆုံးအဖြတ်သည်သာ အတည်ဖြစ်သည်။"
+        android:textSize="20dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/textSlider"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/imageview_main_activity_at_skex"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="swipeRight.json"
+        app:lottie_loop="true"
+        app:lottie_speed="2.5" />
+    <!--    for second Slide-->
+    <TextView
+        android:id="@+id/imageview_main_activity_commonly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Guide"
+        android:textAlignment="center"
+        android:textColor="@color/amber"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageview_main_activity_django_python"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imageview_main_activity_commonly"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/king5"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="guide.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/imageview_main_activity_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_main_activity_django_python"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:justificationMode="inter_word"
+        android:src="@drawable/queen1"
+        android:text="1) Voting App ကိုအသုံးပြုရန် Internet ဖွင့်ထားရန် လိုအပ်ပါသည်။\n2) Vote ပေးရန်အတွက် ကျောင်းသားတိုင်း Account တစ်ခုစီ ရရှိမည်ဖြစ်သည်။"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/imageview_main_activity_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_main_activity_mobile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:src="@drawable/queen2"
+        android:text="2) Account ကို Welcomeပွဲ ကျင်းပသည့် Hall ခန်းတွင်း၌ သတ်မှတ်ချိန်ရောက်မှ ပေးမည်ဖြစ်သည်။"
+        android:textSize="20dp" />
+
+    <!--    for third slide-->
+    <TextView
+        android:id="@+id/imageview_main_activity_diploma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="User Guide1"
+        android:textAlignment="center"
+        android:textColor="@color/amber"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"/>
+
+    <ImageView
+        android:id="@+id/imageview_main_activity_why"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@+id/imageview_main_activity_diploma"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/loginguide"/>
+    <TextView
+        android:id="@+id/userguiderule1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_main_activity_why"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:src="@drawable/queen2"
+        android:text="1) Login ဝင်ရာတွင် username နှင့် password ကို သေချာရိုက်ထည့်‌ပါ။\n2) Login ဝင်မရပါက Contact မှ တဆင့် admin team သို့ ဆက်သွယ်နိုင်ပါသည်။"
+        android:textSize="20dp" />
+    <!--    for fourth slide-->
+
+    <TextView
+        android:id="@+id/imageview_main_future"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="User Guide2"
+        android:textAlignment="center"
+        android:textColor="@color/amber"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageview_main_arduino"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/imageview_main_future"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/king" />
+    <ImageView
+        android:id="@+id/imageview_main_connected_device"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imageview_main_future"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/queen" />
+
+    <TextView
+        android:id="@+id/imageview_main_raspberry_pi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview_main_arduino"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:src="@drawable/queen2"
+        android:text="3) login ဝင်ပြီးလျှင် king နှင့် queen ပုံ နှစ်မျိုးပေါ်လာမည်။\n4) king voting အတွက် vote ပေးပြီးလျှင် king ထဲသို့ ဝင်မရနိုင်ပါ။\n5) queen voting သည်လည်း ထိုနည်းလည်းကောင်းပင်ဖြစ်သည်။"
+        android:textSize="20dp" />
+
+
+    <!--for final slide-->
+    <TextView
+        android:id="@+id/imageview_main_check_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="User Guide3"
+        android:textAlignment="center"
+        android:textColor="@color/amber"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/textview_main_github_link"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@+id/imageview_main_check_out"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/sureguide" />
+    <TextView
+        android:id="@+id/user_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_main_github_link"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:justificationMode="inter_word"
+        android:src="@drawable/queen2"
+        android:text="6) vote ရာတွင် သေချာvote စေလိုပါသည်။\n7) ဖုန်းအမျိုးအစားကို လိုက်၍ app အသုံးပြုရာတွင် အနဲငယ် ကြန့်ကြာမူရှိနိုင်ပါသည်။"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/textview_main_linkedin_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/edittext_bg"
+        android:text="   Let's Vote   "
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

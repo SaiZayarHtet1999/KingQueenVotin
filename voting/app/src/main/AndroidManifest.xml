@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ucs_tgi.voting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".GlobalClass"
+        android:allowBackup="true"
+        android:icon="@drawable/vote_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sai"></activity>
+        <activity android:name=".zaw" />
+        <activity android:name=".nway" />
+        <activity android:name=".wine" />
+        <activity android:name=".nyein" />
+        <activity android:name=".aye" />
+        <activity android:name=".arkar" />
+        <activity android:name=".Contact" />
+        <activity android:name=".slider" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QueenUser" />
+        <activity android:name=".KingUser" />
+        <activity android:name=".Register" />
+        <activity android:name=".KQUser" />
+        <activity android:name=".QueenAdmin" />
+        <activity android:name=".KingAdmin" />
+        <activity android:name=".KQAdmin" />
+        <activity android:name=".AdminMode" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
